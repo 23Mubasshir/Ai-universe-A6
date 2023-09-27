@@ -1,0 +1,37 @@
+.card-img-top {
+    width: cover;
+    height: 270px;
+    object-fit: cover;
+    }
+
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 20px;
+    }
+    
+.btn-arrow{
+    text-align: right;   
+}
+
+.card-color{
+    background-color: rgba(235, 87, 87, 0.05);;
+}
+
+.text-orange{
+    color: #F28927;
+    background-color: #FFFFFF;
+}
+
+.text-red{
+    color: #EB5757;
+    background-color: #FFFFFF;
+}
+
+.text-green{
+    color: #03A30A;
+    background-color: #FFFFFF;
+}

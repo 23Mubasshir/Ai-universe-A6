@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Universe Hub</title>
+    <!-- Bootstrap CSS link (offline) -->
+    <link rel="stylesheet" href="Bootstrap css and Javascript/bootstrap.min.css">
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+</head>
+<body class="container">
+
+    <!-- Header Section -->
+    <header>
+        <div class="text-center"><h1 class="my-5 fw-bold">AI Universe Hub</h1></div>
+        <div id="sort-by-date" class="text-center mb-5">
+          <button onclick="shortByDate()"type="button text-center" class="btn btn-danger fw-bold p-3">Sort By Date</button></div>
+    </header>
+
+    <!-- main Section -->
+        <main>
+            <section >
+
+            <!-- All cards -->
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="card">
+            </div>
+
+            <!-- loading spinner -->
+            <div class="text-center ">
+                <div id="spinner" class="mt-5 spinner-border text-primary d-none" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+            </div>
+
+            <!-- See More button -->
+            <div class="text-center py-5">
+                <button onclick="showAllDataTogether()" type="button text-center" class="btn btn-danger fw-bold p-3">See More</button>
+            </div>
+
+            <!-- Modal -->
+
+            <div id="modal-open">
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                      <div class="modal-content">
+
+                        <div class="modal-header">
+                          <button type="button" class="btn-close bg-danger rounded-5 p-3 text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body " >  
+
+                            <div class="container-fluid">
+                            <div id="modal-body-cards" class="row g-4 ">
+                            </div>
+                            </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            </section>
+        </main>
+
+
+    <!-- Bootstrap Javascript Link (offline) -->
+    <script src="Bootstrap css and Javascript/bootstrap.min.js"></script>
+    <!-- Javascript file link-->
+    <script src="index.js"></script>
+    <!-- Javascript font awesome -->
+    <script src="https://kit.fontawesome.com/18cfd9f107.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
